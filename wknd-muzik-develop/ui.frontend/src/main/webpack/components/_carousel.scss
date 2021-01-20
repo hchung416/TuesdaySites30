@@ -1,0 +1,93 @@
+.cmp-carousel--wknd-muzik {
+    .cmp-carousel {
+        position: relative;
+        margin-top: -8rem;
+
+        &__content {}
+
+        &__item {
+            background-color: $color-black;
+            height: 63.1rem;
+
+            .cmp-container--hero-banner {
+
+                .cmp-container {
+                    min-height: 63.1rem;
+                    max-height: 63.1rem;
+
+                    &>.aem-Grid {
+                        margin-top: 3rem;
+                    }
+                }
+
+                .cmp-text {
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 5;
+                    max-height: 8.15em;
+                    overflow: hidden;
+
+                    @media (max-width: 768px) {
+                        -webkit-line-clamp: 3;
+                        max-height: 4.89em;
+                    }
+                }
+            }
+        }
+
+        &__actions {
+            display: none;
+        }
+
+        &__action {
+            &--disabled {}
+            &--previous {}
+            &--next {}
+            &--pause {}
+            &--play {}
+        }
+
+        &__action-icon {}
+
+        &__action-text {}
+
+        &__indicators {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: rotate(90deg);
+            align-items: center;
+
+            @media (max-width: 768px) {
+                transform: rotate(0deg) translate(-50%);
+                top: calc(100% - 25px);
+                left: 50%;
+            }
+        }
+
+        &__indicator {
+            background-color: rgba(255, 255, 255, 0.5);
+            height: 0.6rem;
+            margin: 0 0.9rem;
+            width: 0.6rem;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &--active {
+                border: 0.5rem solid $color-white;
+                background-color: $color-white;
+
+                &:focus {
+                    outline: none;
+                    box-shadow: 0 0 0.2rem 0.2rem $color-primary;
+                }
+            }
+        }
+    }
+}

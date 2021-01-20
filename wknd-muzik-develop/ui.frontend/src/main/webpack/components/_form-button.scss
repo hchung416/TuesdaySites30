@@ -1,0 +1,19 @@
+.cmp-form-button {
+    background-color: $color-primary;
+    border-radius: 0.8rem;
+    border: 0;
+    padding: 1.1rem 2.5rem;
+    cursor: pointer;
+    color: $color-white;
+    font-weight: $font-weight-bold;
+    font-size: 1.4rem;
+    line-height: 1.29;
+    letter-spacing: 0.28rem;
+    margin-top: 7.8rem;
+    text-transform: uppercase;
+    width: 100%;
+
+    @media (max-width: 768px) {
+        margin-top: 4rem;
+    }
+}

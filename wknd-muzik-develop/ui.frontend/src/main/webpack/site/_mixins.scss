@@ -1,0 +1,12 @@
+@mixin max-screen() {
+    max-width: 168rem;
+    margin: 0 auto;
+}
+@mixin flex-50() {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+@mixin flex-100() {
+    flex: 0 0 100%;
+    max-width: 100%;
+}

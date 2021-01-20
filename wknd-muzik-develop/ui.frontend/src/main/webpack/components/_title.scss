@@ -1,0 +1,31 @@
+.cmp-title--pseudo-h1 {
+    .cmp-title {
+        &__text {
+            @extend .heading1;
+        }
+    }
+}
+
+.cmp-title--uppercase {
+    .cmp-title {
+        &__text {
+            text-transform: uppercase;
+        }
+    }
+}
+
+.cmp-title--center {
+    .cmp-title {
+        &__text {
+            text-align: center;
+        }
+    }
+}
+
+.cmp-title--right {
+    .cmp-title {
+        &__text {
+            text-align: right;
+        }
+    }
+}

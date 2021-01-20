@@ -1,0 +1,41 @@
+.cmp-form-text {
+    font-size: $font-size-small;
+    font-weight: $font-weight-bold;
+    line-height: 1.29;
+    letter-spacing: 0.28rem;
+    text-transform: uppercase;
+
+    label {
+        margin: 7.5rem 0 3.2rem;
+
+        @media (max-width: 768px) {
+            margin-top: 4rem;
+        }
+    }
+
+    &__text {
+        box-shadow: none;
+
+        &::placeholder {
+            color: $color-white;
+            font-weight: $font-weight-regular;
+            opacity: 0.8;
+        }
+
+        &:focus, &:active {
+            border-color: $color-primary !important;
+            caret-color: $color-primary;
+
+            &::placeholder {
+                color: transparent;
+            }
+        }
+
+        &:invalid:not(:placeholder-shown) {
+            border-color: $color-red !important;
+            background-position: 97% 1.4rem;
+            background-image: url("../resources/images/icon-warning.svg");
+            background-repeat: no-repeat;
+        }
+    }
+}

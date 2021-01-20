@@ -1,0 +1,28 @@
+.cmp-tabs {}
+.cmp-tabs__tablist {
+    align-items: center;
+}
+.cmp-tabs__tab {
+    @extend .heading5;
+    letter-spacing: 0.28rem;
+    text-align: center;
+    color: $color-white;
+    padding: 1.3rem;
+    border-radius: 0.8rem;
+    margin-right: 6rem;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @media (max-width: 768px) {
+        margin-right: 4vw;
+    }
+}
+.cmp-tabs__tab--active {
+    background-color: $color-primary;
+    font-weight: $font-weight-bold;
+    border-color: transparent;
+}
+.cmp-tabs__tabpanel {}
+.cmp-tabs__tabpanel--active {}

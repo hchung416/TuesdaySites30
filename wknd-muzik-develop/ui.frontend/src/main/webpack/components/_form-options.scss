@@ -1,0 +1,93 @@
+.cmp-form-options {
+    margin-top: 7.5rem;
+
+    @media (max-width: 768px) {
+        margin-top: 4rem;
+    }
+
+    &__legend {
+        font-size: $font-size-small;
+        font-weight: $font-weight-bold;
+        line-height: 1.29;
+        letter-spacing: 0.28rem;
+        text-transform: uppercase;
+        margin: 1.6rem 0 3.2rem;
+    }
+
+    &__field--radio {
+        appearance: none;
+        border-radius: 50%;
+        border: 0.2rem solid $color-white;
+        display: inline-block;
+        height: 1.8rem;
+        padding: 0;
+        vertical-align: text-top;
+        width: 1.8rem !important;
+
+        &:focus {
+            border-color: $color-white;
+        }
+
+        &+.cmp-form-options__field-description {
+            position: relative;
+        }
+
+        &:checked+.cmp-form-options__field-description {
+            &:before {
+                background-color: $color-primary;
+                border-radius: 50%;
+                content:'';
+                height: 1rem;
+                left: -2.3rem;
+                position: absolute;
+                top: 0.4rem;
+                width: 1rem;
+            }
+        }
+    }
+
+    &--multi-drop-down {
+
+        .cmp-form-options__field--multi-drop-down {
+            height: 4.5rem;
+            position: relative;
+            padding: 1.2rem 3rem 1.2rem 1.6rem;
+
+            option {
+                padding: 1.1rem 0;
+                font-weight: $font-weight-bold;
+
+                &:first-child {
+                    padding-top: 0;
+                }
+            }
+
+            option:disabled {
+                color: $color-white;
+                font-weight: $font-weight-regular;
+                opacity: 0.8;
+            }
+
+            &:focus {
+                height: auto;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 17px;
+                    width: 14px;
+                    height: 11px;
+                    background-image: url("../resources/images/icon-down.svg");
+                    left: 92%;
+                    background-repeat: no-repeat;
+                    transform: rotate(180deg);
+                    background-color: $color-black;
+                }
+            }
+        }
+    }
+
+    &--drop-down &__label, &--multi-drop-down &__label {
+        @extend .cmp-form-options__legend;
+    }
+}

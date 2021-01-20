@@ -1,0 +1,21 @@
+.cmp-embed {
+    text-align: center;
+}
+
+.cmp-embed--aspect-ratio {
+    .cmp-embed {
+        position: relative;
+        display: block;
+        padding-bottom: 56.25%;
+        width: 100%;
+        background: $color-black;
+
+        &>iframe {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

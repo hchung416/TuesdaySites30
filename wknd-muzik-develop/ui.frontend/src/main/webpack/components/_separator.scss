@@ -1,0 +1,29 @@
+
+.cmp-separator {
+    font-size: 0.6rem;
+    line-height: 1;
+    margin: 1.6rem 0;
+    text-align: left;
+
+    &__horizontal-rule {
+        background-color: $color-primary;
+        border: 0;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        height: 0.6rem;
+        width: 12.8rem;
+    }
+}
+
+.cmp-separator--center {
+    .cmp-separator {
+        text-align: center;
+    }
+}
+
+.cmp-separator--right {
+    .cmp-separator {
+         text-align: right;
+    }
+}

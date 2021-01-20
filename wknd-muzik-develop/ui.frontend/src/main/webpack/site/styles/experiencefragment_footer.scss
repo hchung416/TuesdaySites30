@@ -1,0 +1,110 @@
+
+//== XF Footer style, used on page template
+
+footer.experiencefragment {
+    background-color: $color-gray;
+
+    .cmp-separator__horizontal-rule {
+        margin: 0;
+        border: 0;
+    }
+
+    .cmp-list {
+
+        &__item {
+            font-size: $font-size-small;
+            margin-bottom: 2rem;
+
+            &:first-of-type {
+                text-transform: uppercase;
+                font-size: $font-size-xsmall;
+                font-weight: $font-weight-bold;
+                letter-spacing: 0.24rem;
+                margin-bottom: 2.5rem;
+            }
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+
+        &__item-link {
+            &:hover, &:focus {
+                text-decoration: underline;
+            }
+        }
+
+        @media (max-width: 768px) {
+            margin-bottom: 4rem;
+        }
+    }
+
+    .cmp-image {
+
+        &__image {
+            height: 1.4rem;
+            width: auto;
+        }
+
+        &__link {
+            padding: 0.5rem;
+        }
+    }
+
+    .cmp-container {
+
+        .image {
+            display: inline-block;
+            width: auto !important;
+            margin-right: 2.5rem;
+
+            &:last-of-type {
+                margin-right: 0;
+                position: absolute;
+                right: 0;
+                top: 0.2rem;
+
+                .cmp-image__image {
+                    height: 1.6rem;
+                    width: 1.6rem;
+                }
+            }
+        }
+
+        .text {
+            font-size: $font-size-small;
+            font-family: "Open Sans";
+            color: $color-white;
+        }
+    }
+
+    .cmp-experiencefragment--footer {
+        @include max-screen();
+        > .cmp-container > .aem-Grid > .container {
+
+            // Link lists, Social icons, etc.
+            &:first-of-type {
+                padding: 8rem 0;
+
+                > .cmp-container > .aem-Grid > .container {
+
+                    // Social icons container
+                    &:last-of-type {
+                        position: relative;
+                        margin-left: -0.5rem;
+                        margin-top: -0.3rem;
+                    }
+                }
+            }
+
+            // Footer text
+            &:last-of-type {
+                border-top: 0.1rem $color-white solid;
+                opacity: 0.25;
+                padding: 2.5rem 0;
+                width: 100%;
+            }
+        }
+    }
+
+}

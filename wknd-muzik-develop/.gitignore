@@ -1,0 +1,68 @@
+# Java noise
+*.class
+
+# SCM directories
+.svn
+.git
+.cvs
+
+# Archive files
+*.tar.gz
+*.gz
+*.tar
+*.rar
+
+# OSX noise
+.DS_Store
+*.pbxuser
+profile
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Windows noise
+desktop.ini
+
+# Eclipse/Flash Builder noise
+.actionScriptProperties
+.flexProperties
+.project
+.classpath
+bin/*
+bin-debug/*
+report/*
+bin-test/*
+.flexLibProperties
+
+# Project specific
+*/.settings/*
+*/target/*
+*/.gitignore
+.settings/*
+/target
+*/classes/*
+bundle/gwc-bundle-core/target/
+bundle/gwc-bundle-tags/target/
+longevity-caculator/bundle/target/
+longevity-caculator/content/target/
+
+# File Vault
+.vlt
+
+#Intellij specific
+.metadata
+.project
+.classpath
+.settings/
+*.brackets.json
+.idea/
+*.iml
+
+#node and front end build artifacts
+node/
+node_modules/
+dist/
+ui.apps/src/main/content/jcr_root/apps/wknd-muzik/clientlibs/clientlib-dependencies/
+ui.apps/src/main/content/jcr_root/apps/wknd-muzik/clientlibs/clientlib-site/
